@@ -1,0 +1,125 @@
+.product {
+  padding: 24px 0 61px;
+  background-color: var(--product-bg);
+}
+
+.product__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+  color: var(--hero-title);
+}
+
+.product__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  margin: 50px auto 0;
+}
+
+.product__item {
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #DEDEDE;
+  border-radius: 10px;
+  padding: 33px 20px;
+}
+
+.product__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.product__item:nth-child(1)::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-image: url('../images/built-li1.svg');
+  background-position: center;
+  background-size: 50px 50px;
+  content: "";
+}
+
+.product__item:nth-child(2)::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-image: url('../images/built-li2.svg');
+  background-position: center;
+  background-size: 50px 50px;
+  content: "";
+}
+
+.product__item:nth-child(3)::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-image: url('../images/product-li3.svg');
+  background-position: center;
+  background-size: 50px 50px;
+  content: "";
+}
+
+.product__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  margin: 32px 0 16px;
+  color: var(--hero-title);
+}
+
+.product__text__box {
+  width: 100%;
+  max-width: 275px;
+  margin: 0 auto;
+}
+
+.product__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  margin: 0;
+  color: var(--hero-title);
+}
+
+@media only screen and (min-width:1024px) {
+
+  .product__list {
+    width: 100%;
+    max-width: 1110px;
+    flex-direction: row;
+  }
+
+  .product__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+}
+
+
+@media only screen and (max-width:403px) {
+
+  .product__title {
+    font-size: 27px;
+    line-height: 43px;
+  }
+
+}
+
+@media only screen and (max-width:340px) {
+  .product__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+}

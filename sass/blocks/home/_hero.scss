@@ -1,0 +1,150 @@
+.hero__inner {
+  background-image: url('../images/hero-bcgi.png');
+  background-repeat: no-repeat;
+  background-position: top 25px right;
+  background-size: 600px 555px;
+  padding: 145px 0 219px;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 458px;
+}
+
+.hero__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  color: var(--hero-title);
+}
+
+.hero__text {
+  margin: 18px 0 45px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--hero-text);
+}
+
+.hero__buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero__started {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: #02897A;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 41px;
+  border: 2px solid #02897A;
+  transition: all .4s ease;
+}
+
+.hero__started:hover {
+  color: var(--btn-get);
+  background-color: transparent;
+  border: 2px solid #02897A;
+  transition: all .4s ease;
+}
+
+.hero__video {
+  display: flex;
+  align-items: center;
+  margin-left: 44px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  transition: all .3s ease;
+  color: #02897A;
+}
+
+.hero__video::before {
+  width: 20px;
+  height: 17px;
+  margin-right: 8px;
+  background-image: url('../images/watch.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.hero__video:hover {
+  color: var(--btn-watch);
+  transition: all .3s ease;
+}
+
+.hero__span {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width:576px) {
+  .hero__inner {
+    padding: 350px 0 115px;
+    background-size: 338px 311px;
+    background-position: top 29px center;
+    background-repeat: no-repeat;
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
+  }
+
+  .hero__title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .hero__text__box {
+    width: 100%;
+    max-width: 326px;
+    margin: 0 auto;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
+
+  .hero__started {
+    padding: 15px 24px;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .hero__inner {
+    background-size: 100%;
+  }
+
+  .hero__title {
+    font-size: 30px;
+  }
+
+  .hero__started {
+    padding: 11px 15px;
+    font-size: 14px;
+  }
+
+  .hero__video {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .hero__video::before {
+    width: 15px;
+    height: 17px;
+  }
+}

@@ -1,0 +1,158 @@
+.site-header {
+  background-color: var(--site-header-bcg);
+  padding: 22px 0 22px;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  transition: all .3s ease-in;
+}
+
+.logo-link:hover .logo-text {
+  transition: all .3s ease-in;
+  opacity: 0.8;
+}
+
+.logo-link:hover .logo-white {
+  transition: all .3s ease-in;
+  opacity: 0.8;
+}
+
+.logo-link:hover .logo-p {
+  transition: all .3s ease-in;
+  opacity: 0.6;
+}
+
+.logo-text {
+  margin-left: 16px;
+  display: var(--logo-text);
+}
+
+.logo-white {
+  margin-left: 16px;
+  display: var(--logo-white);
+  color: var(--logo-color);
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item+.nav__item {
+  margin-left: 24px;
+}
+
+.nav__link {
+  padding: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--nav-link);
+  transition: all .3s ease-in-out;
+}
+
+.nav__link:hover {
+  color: #02897A;
+  transition: all .3s ease-in-out;
+}
+
+.nav__link--thick {
+  font-weight: 600;
+}
+
+.site-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.site-btn__register__btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--sign-in);
+  padding: 10px 25px;
+  border: 1px solid #BCD0E5;
+  transition: all .4s ease;
+}
+
+.site-btn__register__btn:hover {
+  border: 1px solid #BCD0E5;
+  background-color: #02897A;
+  color: #FFFFFF;
+  transition: all .4s ease;
+}
+
+.sign-in {
+  border-radius: 4px;
+}
+
+.sign-up {
+  border-radius: 4px;
+}
+
+.site-btn__mode__btn {
+  border: none;
+  background-color: transparent;
+  transition: all .5s ease-in;
+}
+
+.site-btn__mode__btn:hover {
+  transform: rotate(540deg);
+  transition: all .5s ease-in;
+}
+
+.menu__btn {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+
+@media only screen and (max-width:576px) {
+
+  body{
+    padding-top: 81px;
+  }
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .site-btn__mode__btn{
+    display: block;
+    margin: 20px auto;
+  }
+
+  .site-btn__mode__btn:hover {
+    transform: rotate(0deg);
+  }
+  
+  .menu__btn{
+    display: block;
+  }
+
+  .menu__dark {
+    display: var(--menu-btn-dark);
+  }
+  
+  .menu__white {
+    display: var(--menu-btn-white);
+  }
+}

@@ -1,0 +1,93 @@
+:root {
+  --body: #fff;
+  --menu-btn-dark: block;
+  --menu-btn-white: none;
+  --bg-color-menu: none;
+  --bg-blur-menu: none;
+  --width-bg: 0px;
+  --height-bg: 0px;
+  --menu-position: translateX(110%);
+  --enterprise-bcg: linear-gradient(
+    180deg,
+    #f7f7f7 0%,
+    #f7f7f700 100%
+  );
+  --site-header-bcg: #fff;
+  --logo-white: none;
+  --logo-text: inline-flex;
+  --nav-link: #22343d;
+  --sign-in: #173a56;
+  --hero-title: #22343d;
+  --hero-text: #22345d;
+  --btn-get: #02897a;
+  --btn-watch: #02897acc;
+  --bulit-bcgimage: url('../images/bcgimage-built.png');
+  --built-title: #22343d;
+  --built-subtitle: #22343d;
+  --built-item-text: #22343d;
+  --built-btn-hover: #02897a;
+  --work: #22343d;
+  --process-bcgimage: url('../images/process-bcgimage.png');
+  --question-item-border: 1px solid #e7e7e7;
+  --strategies-item-content: 24px auto 40px 0;
+  --product-bg: #f5f5f5;
+  --join-bgc: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
+  --join-desc: #000;
+  --great-business-email: #22343d;
+  --business-joins: #4f596a;
+  --contact-title: #252b42;
+  --contact-us-text: #374754;
+  --message-bc: #ffffff;
+  --message-border-color: #ddd;
+  --menu-box: #fff;
+  --menu-link: #000;
+  --exit-bci: url('../images/exit-menu.png');
+}
+
+.dark {
+  --body: #1f2e35;
+  --menu-btn-dark: none;
+  --menu-btn-white: block;
+  --enterprise-bcg: #22343d;
+  --site-header-bcg: #1f2e35;
+  --logo-white: inline-flex;
+  --logo-text: none;
+  --nav-link: #fff;
+  --sign-in: #fff;
+  --hero-title: #fff;
+  --hero-text: #fff;
+  --btn-get: #fff;
+  --btn-watch: #fff;
+  --bulit-bcgimage: url('../images/bcgimage-night-built.png');
+  --built-title: #fff;
+  --built-subtitle: #fff;
+  --built-item-text: #fff;
+  --built-btn-hover: #fff;
+  --work: #fff;
+  --process-bcgimage: url('../images/process-bcgimage-night.png');
+  --question-item-border: 1px solid #474747;
+  --strategies-item-content: 24px auto 40px;
+  --product-bg: #22343d;
+  --join-bgc: #22343d;
+  --join-desc: #fff;
+  --great-business-email: #fff;
+  --business-joins: #fff;
+  --contact-title: #fff;
+  --contact-us-text: #fff;
+  --message-bc: #22343d;
+  --message-border-color: #464646;
+  --menu-box: #22343d;
+  --menu-link: #fff;
+  --exit-bci: url('../images/exit-white.png');
+}
+
+.bg-menu {
+  --bg-color-menu: #0000004d;
+  --bg-blur-menu: blur(5px);
+  --width-bg: 100vw;
+  --height-bg: 100vh;
+}
+
+.menu {
+  --menu-position: translateX(0);
+}

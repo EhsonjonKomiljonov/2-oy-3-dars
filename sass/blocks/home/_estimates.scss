@@ -1,0 +1,124 @@
+.estimates {
+  margin-bottom: 157px;
+}
+
+.estimates__title__box {
+  margin: 0 auto 50px;
+  width: 100%;
+  max-width: 537px;
+}
+
+.estimates__title {
+  text-align: center;
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: var(--hero-title);
+}
+
+.estimates__text {
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: var(--hero-title);
+}
+
+.estimates__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.estimates__item {
+  width: 100%;
+  max-width: 327px;
+  padding: 26px;
+  background-color: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+}
+
+.estimates__item__text {
+  margin: 16px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.estimates__item__workers {
+  display: flex;
+  margin-top: 16px;
+}
+
+.estimates__person__content {
+  margin-left: 14px;
+}
+
+.estimates__person {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #02897A;
+}
+
+.estimates__person__work {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+@media only screen and (max-width:576px) {
+  .estimates__title__box {
+    width: 100%;
+    max-width: 323px;
+    margin: 0 auto 32px;
+  }
+
+  .estimates__list {
+    flex-direction: column;
+  }
+
+  .estimates__item+.estimates__item {
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width:365px) {
+  .estimates__title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .estimates__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .estimates__item__text {
+    font-size: 13.5px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+
+  .estimates__person {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .estimates__person__work {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

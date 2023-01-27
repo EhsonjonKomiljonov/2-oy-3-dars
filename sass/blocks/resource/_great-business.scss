@@ -1,0 +1,216 @@
+.great-business {
+  padding: 50px 0 46px;
+}
+
+.great-business__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.great-business__content {
+  width: 100%;
+  max-width: 353px;
+  margin: 0 auto 85px;
+}
+
+.great-business__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 149%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin: 0 0 16px;
+  color: var(--hero-title);
+}
+
+.great-business__desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 171%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin: 0 0 19px;
+  color: var(--hero-title);
+}
+
+.great-business__mail {
+  display: flex;
+  margin-bottom: 34px;
+}
+
+.great-business__label {
+  border: 1px solid #EAEAEA;
+  border-radius: 100px;
+  padding: 8px;
+}
+
+.great-business__email {
+  padding: 17px 0 17px 14px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.great-business__email::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: var(--great-business-email);
+}
+
+.great-business__btn {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 17px 16px;
+  background-color: #02897A;
+  border-radius: 100px;
+  color: #FFFFFF;
+  border: none;
+  border: 2px solid transparent;
+  transition: all .4s ease;
+}
+
+.great-business__btn:hover{
+  background-color: #fff;
+  color: #02897A;
+  border: 2px solid #02897A;
+}
+
+.great-business__joins {
+  display: flex;
+  align-items: center;
+}
+
+.great-business__joins__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 8px;
+  color: var(--business-joins);
+}
+
+.great-business__joins__number {
+  font-weight: 500;
+  color: #02897A;
+}
+
+.great-business__joins__plus {
+  color: #9F07FF;
+}
+
+.great-business__picture {
+  margin-right: auto;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width:1024px) {
+
+  .great-business {
+    padding: 76px 0 67px;
+  }
+
+  .great-effects__inner {
+    justify-content: space-between;
+  }
+
+  .great-business__content {
+    width: 100%;
+    max-width: 530px;
+    margin: 0 0 85px;
+  }
+
+  .great-business__title__box {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .great-business__title {
+    font-size: 40px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .great-business__desc {
+    text-align: left;
+  }
+
+  .great-business__mail {
+    margin-bottom: 24px;
+  }
+
+  .great-business__label {
+    width: 100%;
+    max-width: 470px;
+  }
+
+  .great-business__btn {
+    margin-left: 168px;
+  }
+
+  .great-business__picture {
+    margin: 0;
+  }
+
+  .great-business__btn {
+    font-size: 16px;
+    padding: 15px 14px;
+  }
+}
+
+
+@media only screen and (max-width:576px) {
+  .great-business__img {
+    width: 100%;
+    max-width: 359px;
+    height: 263px;
+  }
+}
+
+@media only screen and (max-width:390px) {
+  .great-business__title {
+    font-size: 29.8px;
+    line-height: 140%;
+  }
+
+  .great-business__desc {
+    font-size: 18px;
+    line-height: 165%;
+  }
+
+  .great-business__label {
+    padding: 6px;
+  }
+
+  .great-business__email {
+    padding: 15px 0 15px 5px;
+  }
+}
+
+@media only screen and (max-width:370px) {
+  .great-business__label {
+    padding: 6px;
+    margin: 0 auto;
+  }
+
+  .great-business__email {
+    width: 100%;
+    max-width: 170px;
+    padding: 10px 0 10px 10px;
+  }
+
+  .great-business__email::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 50px;
+  }
+
+  .great-business__btn {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 13px 10px;
+  }
+}

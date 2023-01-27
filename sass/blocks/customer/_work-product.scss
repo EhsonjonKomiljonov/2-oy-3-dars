@@ -1,0 +1,122 @@
+.product-work {
+  padding: 96px 0 70px;
+}
+
+.product-work__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+  color: var(--hero-title);
+}
+
+.product-work__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 349px;
+  margin: 79px auto 70px;
+}
+
+.product-work__item+.product-work__item {
+  margin-top: 69px;
+}
+
+.macbook-pro {
+  width: 100%;
+  max-width: 349px;
+  height: auto;
+}
+
+.product-work__content {
+  margin-top: 80px;
+}
+
+.product-work__heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 16px;
+  color: var(--hero-title);
+}
+
+.product-work__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 16px;
+  color: var(--hero-title);
+}
+
+.product-work__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  color: var(--hero-title);
+}
+
+.product-work__btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 224px;
+  margin: 0 auto;
+  padding: 11px 18px;
+  background-color: #02897A;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all .4s ease;
+}
+
+.product-work__btn:hover {
+  background-color: #fff;
+  border: 2px solid #02897A;
+  color: #02897A;
+}
+
+@media only screen and (min-width:1024px) {
+  .product-work__list {
+    flex-direction: column;
+    width: 100%;
+    max-width: 1027px;
+  }
+
+  .product-work__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .product-work__item+.product-work__item {
+    margin-top: 100px;
+  }
+
+  .product-work__item:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .product-work__content {
+    width: 100%;
+    max-width: 438px;
+    margin-top: 0;
+  }
+
+  .macbook-pro {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:360px) {
+  .product-work__title {
+    font-size: 27px;
+    line-height: 43px;
+  }
+}

@@ -1,0 +1,87 @@
+.our-clients {
+  padding: 50px 0 80px;
+}
+
+.our-clients__inner {
+  width: 100%;
+  max-width: 365px;
+  margin: 0 auto;
+}
+
+.our-clients__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  margin: 0 0 38px;
+  color: var(--hero-title);
+}
+
+.our-clients__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 38px;
+}
+
+
+.our-clients__item:nth-child(3) {
+  margin-top: 54px;
+}
+
+.our-clients__item:nth-child(4) {
+  margin-top: 54px;
+}
+
+@media only screen and (min-width:1024px) {
+
+  .our-clients__inner {
+    width: 100%;
+    max-width: 850px;
+  }
+
+  .our-clients__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .our-clients__list {
+    flex-direction: row;
+  }
+
+  .our-clients__item:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .our-clients__item:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .microsoft-logo {
+    width: 100%;
+    max-width: 164px;
+    height: 34px;
+  }
+}
+
+@media only screen and (max-width:390px) {
+
+  .our-clients__list {
+    flex-direction: column;
+  }
+
+  .our-clients__item {
+    margin-top: 50px;
+  }
+
+  .our-clients__item:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .main-logos {
+    width: 100%;
+    max-width: 140px;
+    height: 45px;
+  }
+}

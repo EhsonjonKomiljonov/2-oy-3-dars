@@ -1,0 +1,140 @@
+.great-effects {
+  padding: 150px 0 150px;
+}
+
+.great-effects__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+  margin: 0 0 56px;
+  color: var(--hero-title);
+}
+
+.great-effects__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.great-effects__item {
+  position: relative;
+  width: 100%;
+  max-width: 533px;
+}
+
+.great-effects__item:nth-child(1):before {
+  position: absolute;
+  top: -7px;
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+  background-image: url('../images/great-effects-li1.svg');
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.great-effects__item:nth-child(2):before {
+  position: absolute;
+  top: -7px;
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+  background-image: url('../images/great-effects-li2.svg');
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.great-effects__item:nth-child(3):before {
+  position: absolute;
+  top: -7px;
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+  background-image: url('../images/great-effects-li3.svg');
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.great-effects__item+.great-effects__item {
+  margin-top: 40px;
+}
+
+.great-effects__item:not(:last-child) {
+  width: 100%;
+  max-width: 506px;
+}
+
+.great-effects__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 23px 64px;
+  color: var(--hero-title);
+}
+
+.great-effects__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  color: var(--hero-title);
+}
+
+@media only screen and (max-width:576px) {
+
+  .great-effects {
+    padding: 100px 0;
+  }
+
+  .great-effects__inner {
+    flex-direction: column;
+  }
+
+  .great-effects__title__box {
+    width: 100%;
+    max-width: 342px;
+    margin: 0 auto;
+  }
+
+  .great-effects__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .great-effects__picture {
+    width: 100%;
+    max-width: 352px;
+    height: 288px;
+  }
+
+  .great-effects__list {
+    width: 100%;
+    max-width: 338px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .great-effects__item:not(:last-child) {
+    width: 100%;
+    max-width: 333px;
+  }
+
+  .great-effects__item+.great-effects__item {
+    margin-top: 31px;
+  }
+}
+
+@media only screen and (max-width:395px) {
+
+  .great-effects__picture {
+    width: 100%;
+    max-width: 352px;
+    height: auto;
+  }
+
+  .great-effects__title {
+    font-size: 27px;
+    line-height: 43px;
+  }
+}

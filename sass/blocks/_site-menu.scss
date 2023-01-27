@@ -1,0 +1,122 @@
+.site-menu__box {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: 1000px;
+  background-color: var(--menu-box);
+  transform: var(--menu-position);
+  transition: all 0.3s ease;
+}
+
+.bgc-menu {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  z-index: 16;
+  width: var(--width-bg);
+  height: var(--height-bg);
+  translate: 100%;
+  backdrop-filter: var(--bg-blur-menu);
+  background-color: var(--bg-color-menu);
+  // transition: 0.3s;
+}
+
+.exit {
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 190px;
+  background-color: transparent;
+  border: none;
+
+  &-icon {
+    font-size: 35px;
+    color: var(--nav-link);
+  }
+}
+
+// .site-menu {
+//   padding-top: 50px;
+// }
+
+.site-menu__link {
+  text-align: center;
+  display: block;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--menu-link);
+  transition: all 0.3s ease-in-out;
+}
+
+.site-menu__item {
+  padding: 10px;
+}
+
+.site-menu__item + .site-menu__item {
+  margin-top: 20px;
+}
+
+.site-menu__item:active {
+  background-color: #eee;
+}
+
+.site-btn__register__btn--sign {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  margin: 0 auto;
+  background-color: #02897a;
+  color: #fff;
+}
+
+@media only screen and (min-width: 1024px) {
+  .site-menu__box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .site-btn__mode__btn--menu {
+    display: block;
+    width: 43px;
+    height: 43px;
+    margin: 10px auto 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .site-menu__box {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .site-menu__item {
+    padding: 5px;
+  }
+
+  .site-menu__item + .site-menu__item {
+    margin-top: 10px;
+  }
+
+  .exit {
+    margin-left: 150px;
+    background-size: 25px 25px;
+  }
+}
+
+@media only screen and (max-height: 568px) {
+  .site-menu {
+    padding-top: 25px;
+  }
+
+  .exit {
+    background-size: 25px 25px;
+  }
+}

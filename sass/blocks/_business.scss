@@ -1,0 +1,105 @@
+.business__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 49px 51px 56px;
+  background-color: #02897A;
+  border-radius: 32px;
+  background-image: url('../images/business.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 371px 331px;
+}
+
+.business__title__box {
+  width: 100%;
+  max-width: 510px;
+}
+
+.business__title {
+  margin: 0 0 60px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 151.4%;
+  color: #FFFFFF;
+}
+
+.business__btn {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #02897A;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 10px 34px;
+  transition: all .4s ease;
+}
+
+.business__btn:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all .4s ease;
+}
+
+@media only screen and (max-width:576px) {
+  .business__inner {
+    width: 100%;
+    max-width: 371px;
+    padding: 17px 22px 373px;
+    flex-direction: column;
+    background-image: url('../images/business.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 351px 331px;
+  }
+
+  .business__title {
+    font-size: 31px;
+    text-align: center;
+  }
+
+  .business__btn {
+    font-size: 19;
+    display: block;
+    width: 153px;
+    margin: 0 auto;
+    padding: 10px 33px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:405px) {
+  .business__inner {
+    padding: 17px 17px 373px;
+    background-size: 100%;
+    background-position: bottom 17px center;
+  }
+
+  .business__title {
+    font-size: 23px;
+    margin-bottom: 40px;
+  }
+
+  .business__btn {
+    font-size: 16px;
+    width: 130px;
+    padding: 10px 28px;
+  }
+}
+
+@media only screen and (max-width:370px) {
+  .business__inner {
+    padding-bottom: 343px;
+  }
+}
+
+@media only screen and (max-width:350px) {
+  .business__inner {
+    padding-bottom: 293px;
+  }
+}

@@ -1,0 +1,156 @@
+.site-footer {
+  padding: 150px 0 46px;
+}
+
+.site-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 37px;
+}
+
+.socials {
+  margin-top: 28px;
+}
+
+.socials>a+a {
+  margin-left: 16px;
+}
+
+
+.site-footer__subtitle__box {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 34px;
+}
+
+.site-footer__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--hero-title);
+}
+
+.main__items {
+  margin-top: 8px;
+}
+
+.main__links {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: var(--hero-title);
+  transition: all .3s ease-in;
+}
+
+.main__links:hover {
+  color: #02897A;
+  transition: all .3s ease-in;
+}
+
+.form__sign-up {
+  display: block;
+  width: 100%;
+  max-width: 325px;
+  padding: 10px 15px;
+  outline: #02897A;
+  background-color: #FFFFFF;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+}
+
+.form__sign-up::placeholder {
+  font-size: 16px;
+  line-height: 28px;
+  color: #BCD0E5;
+}
+
+.form__btn {
+  border: none;
+  padding: 8px 15px;
+  background-color: #02897A;
+  border-radius: 4px;
+  margin-top: 21px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  transition: all .4s ease-in-out;
+}
+
+.form__btn:hover {
+  background-color: #fff;
+  color: #02897A;
+  border: 2px solid #02897A;
+}
+
+.site-footer__small {
+  display: block;
+  font-weight: 400;
+  font-size: 15.4px;
+  line-height: 30px;
+  color: var(--hero-title);
+  text-align: center;
+}
+
+@media only screen and (max-width:576px) {
+
+  .site-footer {
+    padding-top: 100px;
+  }
+
+  .site-footer__inner {
+    flex-direction: column;
+  }
+
+  .site-footer__logo {
+    width: 100%;
+    max-width: 163px;
+    margin: 0 auto 32px;
+  }
+
+  .stuff {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .main__items {
+    text-align: center;
+  }
+
+  .site-footer__subtitle__box {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 34px;
+  }
+
+  .site-footer__subtitle__box--form {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
+
+  .site-footer__subtitle {
+    display: block;
+    text-align: center;
+  }
+
+  .site-footer__form {
+    width: 100%;
+    max-width: 325px;
+    margin: 0 auto;
+  }
+
+  .form__sign-up {
+    width: 100%;
+    max-width: 325px;
+  }
+
+  .form__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 29px;
+  }
+
+}
